@@ -2,11 +2,12 @@
 layout: page
 title: About
 permalink: /about/
-feature-img: "img/sample_feature_img_2.png"
 ---
 
-Type Theme is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+Hi my name is Stijn Voss. I am a student computer science living in Nijmegen, The Netherlands. During high school I got involved in (mostly back-end) web development as a hobby and a side job. 
 
-Head over to the [theme's documentation](https://rohanchandra.github.io/project/type/) for much more information about Type Theme or to install this theme on your own Jekyll site.
+Later on during my study computer science I became interested in the opportunities that the field of data science seems to offer. Which is why I am currently doing the data science master's track at Radboud University. 
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+I am also involved in a start-up called [whichmuseum](https://whichmuseum.com) where we try to provide users with insight into museums they could visit wherever they go. In the little time I have left I do some freelance work every now and then.
+
+In this blog I aim to share my (hopefully) interesting experiences I have at my study and other activities.
