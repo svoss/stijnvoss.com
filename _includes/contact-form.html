@@ -1,0 +1,32 @@
+<div class="contact-container">
+	<h3>Contact me</h3>
+	<form action="https://getsimpleform.com/messages?form_api_token=af5e7186a4329848e73813459b4262d6" class="contact-form" method="post">
+	  	  <div class="row">
+	        <input type="text" name="first_name" placeholder="{% if page.lang == 'en' %}First name{% else %}Voornaam{% endif %}" class="left" />
+	    
+	        <input type="text" name="last_name" placeholder="{% if page.lang == 'en' %}Last name{% else %}Achternaam{% endif %}" class="right" />      
+	   		
+	  	  </div>
+	  	  <br style="clear:both;">
+	  	  <div class="row">
+			<input type="text" name="email" placeholder="Email" required="required"/>   
+			  <input type="text" name="Phone" placeholder="{% if page.lang == 'en' %}Telephone{% else %}Telefoon{% endif %}" class="right" /> 
+	      </div>
+	   
+	  	  <br style="clear:both;">
+	      <textarea style="width:100%;" rows="10" name="message" placeholder="{% if page.lang == 'en' %}Message{% else %}Bericht{% endif %}"></textarea>
+	   
+	    
+	   
+
+	      <input class="btn btn-submit" type="submit" value="{% if page.lang == 'en' %}Submit{% else %}Vestuur{% endif %}" />
+	      <small>{% if page.lang == 'en' %}or press{% else %}of druk{% endif %} <strong>enter</strong></small>
+	   	  {% if page.lang == 'en' %}
+	   	  	<input type='hidden' name='redirect_to' value='{{ "/thanks.html" | prepend: site.url }}' />
+	   	  {% else %}
+	   	  	<input type='hidden' name='redirect_to' value='{{ "/nl/bedankt.html" | prepend: site.url }}' />
+	   	  {% endif %}	
+	    
+	  
+	</form>  
+</div>

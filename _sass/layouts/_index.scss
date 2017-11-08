@@ -40,3 +40,73 @@
   padding: $padding-small $padding-large 0 $padding-large;
   text-align: center;
 }
+// Font imports
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+// Color vars
+
+$white: #fff;
+$grey: #ccc;
+$dark_grey: #555;
+$blue: #ffa11e;
+$pink: #ee9cb4;
+
+// Mixins
+
+@mixin lato-book { font-family: 'Lato', sans-serif; font-weight: 300; }
+@mixin lato-reg { font-family: 'Lato', sans-serif; font-weight: 400; }
+@mixin lato-bold { font-family: 'Lato', sans-serif; font-weight: 700; }
+@mixin btn($color) {
+  background-color: $color;
+  border-bottom-color: darken($color, 15%);
+  &:hover {
+      background-color: lighten($color, 5%);
+    }
+}
+
+// Functions
+
+@function pxtoem($target, $context){
+  @return ($target/$context)+0em;
+}
+
+.btn {
+  font-size: pxtoem(17, 16);
+  display: inline-block;
+  padding: 0.74em 1.5em;
+  margin: 1.5em 0 0;
+  color: $white;
+  border-width: 0 0 0 0;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+  @include btn(darken($grey, 10%));
+  @include lato-book;
+  &.btn-submit {
+    @include btn($blue);
+  }
+}
+
+
+.contact-container {
+  background-color: rgba(255, 161, 30,.4);
+  padding: 10px 40px 25px 40px;
+
+  div.row {
+    input {
+      margin-right: 30px;
+      margin-bottom:30px;
+      padding: 10px 5px 5px 10px;
+      width:100%;
+      max-width:300px;
+      float:left;
+    }
+    input.right {
+      margin-right:0px;
+    }
+
+  }
+   textarea {
+     padding: 10px 5px 5px 10px;
+    }
+}

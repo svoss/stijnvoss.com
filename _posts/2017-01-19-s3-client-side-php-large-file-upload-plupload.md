@@ -2,6 +2,7 @@
 layout: post
 title: Large file uploading directly to amazon s3 using chunking in PHP symfony
 permalink: /chuncked-client-side-upload-s3-php-symfony.html
+lang: en
 ---
 ## Uploading video content 
 Recently I was working on a project where users could share a video on a web application to a limited set of users. To make sure that videos can be played inside a browser using HTML5, these video will have to be converted. 
