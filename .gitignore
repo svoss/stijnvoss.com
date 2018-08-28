@@ -4,3 +4,4 @@ Gemfile.lock
 .env
 *s3_website.yml
 *.DS_Store
+vendor/

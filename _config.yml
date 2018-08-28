@@ -68,4 +68,4 @@ highlighter: pygments
 sass:
   sass_dir: _sass
   style: :compressed
-gems: [jekyll-paginate,jekyll-sitemap,jekyll-last-modified-at]
+plugins: [jekyll-paginate,jekyll-sitemap,jekyll-last-modified-at]

@@ -14,3 +14,5 @@ During my study computer science I became interested in the opportunities that t
 I am also involved in a start-up called [whichmuseum](https://whichmuseum.com). Where we try to provide users with insight into museums and related information they could visit wherever they go. In the litle time I have left I do some freelance work.
 
 In this blog I aim to share my (hopefully) interesting experiences I have at my study and other activities.
+
+{% include tagged_posts.html tag="symfony" title="PHP Symfony" %}
